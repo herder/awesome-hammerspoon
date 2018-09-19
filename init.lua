@@ -257,7 +257,7 @@ end
 hslock_keys = hslock_keys or {"alt", "L"}
 if string.len(hslock_keys[2]) > 0 then
     spoon.ModalMgr.supervisor:bind(hslock_keys[1], hslock_keys[2], "Lock Screen", function()
-        hs.open('/System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app')
+        hs.open('/System/Library/CoreServices/ScreenSaverEngine.app')
     end)
 end
 
